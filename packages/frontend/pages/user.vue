@@ -62,16 +62,16 @@ export default {
   },
   head() {
     return {
-      title: `${this.userInfo.username} - 个人中心  - boblog.com`,
+      title: `${this.userInfo?.username} - 个人中心  - RickyBlog.com`,
       meta: [
         {
           name: 'keywords',
           content:
-            '波波,博客,波波博客,梁凤波,bo,blog,boblog,前端开发工程师,前端性能优化,JavaScript,css,html',
+            '博客,ricky,rickyblog,全栈开发工程师,全栈性能优化,JavaScript,css,html,NodeJs',
         },
         {
           name: 'description',
-          content: '波波博客 - BoBlog.com，专注于前端开发技术，前端性能优化！',
+          content: 'Ricky博客 - RickyBlog.com，专注于全栈开发技术，全栈性能优化！',
         },
       ],
     }

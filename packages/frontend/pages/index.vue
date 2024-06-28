@@ -33,7 +33,7 @@
     <div v-if="isLoad" class="response-wrap more" @click="loadMore">
       <div class="more-text">点击加载更多</div>
       <div class="more-arrow">
-        <img src="https://cdn.boblog.com/arrow.png" alt="" />
+        <img src="../assets/image/load_more.svg" alt="" />
       </div>
     </div>
   </div>
@@ -80,16 +80,16 @@ export default {
   },
   head() {
     return {
-      title: '波波博客 - boblog.com - 技术博客',
+      title: 'RickyBlog.com - 技术博客',
       meta: [
         {
           name: 'keywords',
           content:
-            '波波,博客,波波博客,梁凤波,bo,blog,boblog,前端开发工程师,前端性能优化,JavaScript,css,html',
+            '博客,ricky,rickyblog,全栈开发工程师,全栈性能优化,JavaScript,css,html,NodeJs',
         },
         {
           name: 'description',
-          content: '波波博客 - BoBlog.com，专注于前端开发技术，前端性能优化！',
+          content: '博客 - RickyBlog.com，专注于全栈开发技术，全栈性能优化！',
         },
       ],
     }
@@ -223,12 +223,13 @@ export default {
 .more-text {
   font-size: 16px;
   font-weight: 400;
-  color: #222222;
+  color: #a2a2a2;
   line-height: 22px;
 }
 .more-arrow {
-  width: 16px;
+  width: 24px;
   margin-top: 24px;
+  opacity: .6;
 }
 .more-arrow img {
   width: 100%;

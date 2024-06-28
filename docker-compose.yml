@@ -1,6 +1,12 @@
 version: "3"
 
 services:
+  backend:
+    image: ricky_blog_backend:0.0.1.20240628
+    depends_on:
+      - database
+    ports:
+      - 6001:6001
   database:
     image: mysql:8.0
     expose: [3306]
@@ -20,3 +26,15 @@ services:
       MYSQL_ROOT_PASSWORD: root
     ports:
       - 3306:3306
+  frontend:
+    image: ricky_blog_frontend:0.0.1.20240628
+    ports:
+      - 6002:80    
+    depends_on:
+      - backend
+  cms:
+    image: ricky_blog_cms:0.0.1.20240628
+    ports:
+      - 6003:80    
+    depends_on:
+      - backend      

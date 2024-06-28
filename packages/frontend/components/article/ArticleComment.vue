@@ -3,7 +3,7 @@
     <div class="comment">
       <div class="comment-from">
         <div class="comment-avatar">
-          <img src="https://cdn.boblog.com/avatar.png" alt="avatar" />
+          <img src="../../assets/image/avatar.svg" alt="avatar" />
         </div>
         <div class="comment-textarea">
           <textarea
@@ -39,7 +39,7 @@
           class="comment-item"
         >
           <div class="comment-item-avatar">
-            <img src="https://cdn.boblog.com/avatar.png" alt="avatar" />
+            <img src="../../assets/image/avatar.svg" alt="avatar" />
           </div>
           <div class="comment-item-detail">
             <div class="comment-item-user">

@@ -2,7 +2,7 @@
   <div>
     <div class="header">
       <div class="response-wrap header-inner">
-        <a class="logo" href="/"></a>
+        <a class="logo" href="/"></a>       
         <div class="nav">
           <div
             v-for="(item, index) in nav"
@@ -68,7 +68,7 @@ export default {
         {
           title: '首页',
           router: '/',
-        }
+        },         
       ],
     }
   },
@@ -131,9 +131,12 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '../../assets/css/variables.scss';
+
 .header {
   border-bottom: 1px solid #f0f0f0;
 }
+
 .header-inner {
   box-sizing: border-box;
   height: 56px;
@@ -145,10 +148,10 @@ export default {
   cursor: pointer;
   box-sizing: border-box;
   display: block;
-  width: 100px;
+  width: 180px;
   height: 56px;
-  background: url('https://cdn.boblog.com/logo.png') center center no-repeat;
-  background-size: 100px;
+  background: url('../../assets/image/logo.png') center center no-repeat;
+  background-size: 180px;
 }
 .nav {
   box-sizing: border-box;

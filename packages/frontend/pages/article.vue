@@ -28,7 +28,7 @@
           width="0"
           height="0"
           style="display: none"
-          src="https://cdn.boblog.com/login-bg.png"
+          src="../assets/image/login_bg.svg"
           alt="preload"
         />
       </vue-lazy-component>
