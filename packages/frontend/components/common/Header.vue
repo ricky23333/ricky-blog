@@ -131,8 +131,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import '../../assets/css/variables.scss';
-
 .header {
   border-bottom: 1px solid #f0f0f0;
 }
