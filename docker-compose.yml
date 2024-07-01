@@ -9,6 +9,7 @@ services:
       - 6001:6001
   database:
     image: mysql:8.0
+    platform: linux/amd64
     expose: [3306]
     container_name: rickyblog.mysql
     volumes:

@@ -29,7 +29,7 @@
               </el-dropdown-menu>
             </el-dropdown>
           </div>
-          <a href="https://github.com/lfb/nodejs-koa-blog" target="_blank" class="nav-item">
+          <a href="https://github.com/ricky23333" target="_blank" class="nav-item">
             Github
           </a>
         </div>
