@@ -6,6 +6,6 @@ fi
 IMAGE_TAG=$1
 
 docker build --platform linux/amd64 -t ricky_blog_frontend:$IMAGE_TAG -f deployment/dockers/frontend.Dockerfile . 
-# docker save ricky_blog_backend:$IMAGE_TAG | gzip > core-api.$IMAGE_TAG.tar.gz
+docker save ricky_blog_frontend:$IMAGE_TAG | gzip > ricky_blog_frontend.$IMAGE_TAG.tar.gz
 
 echo "Please check docker image ricky_blog_frontend:$IMAGE_TAG"

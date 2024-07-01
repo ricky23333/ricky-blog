@@ -7,4 +7,6 @@ fi
 IMAGE_TAG=$1
 
 docker build --platform linux/amd64 -t ricky_blog_backend:$IMAGE_TAG -f deployment/dockers/backend.Dockerfile . 
+docker save ricky_blog_backend:$IMAGE_TAG | gzip > ricky_blog_backend.$IMAGE_TAG.tar.gz
+
 echo "Please check docker image ricky_blog_backend:$IMAGE_TAG"
