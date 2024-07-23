@@ -14,11 +14,7 @@ services:
     container_name: rickyblog.mysql
     volumes:
       - ./.volumes/database:/var/lib/mysql
-    healthcheck:
-      test: ["CMD", "bash", "-c", "cat < /dev/null > /dev/tcp/127.0.0.1/3306"]
-      interval: 5s
-      timeout: 60s
-      retries: 120
+    restart: always
     environment:
       MYSQL_PORT: 3306
       MYSQL_USER: mysql
