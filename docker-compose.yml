@@ -26,7 +26,7 @@ services:
   frontend:
     image: ricky_blog_frontend:0.0.1.20240701
     ports:
-      - 6002:80    
+      - 6002:6002    
     depends_on:
       - backend
   cms:
