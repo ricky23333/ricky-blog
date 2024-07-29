@@ -19,8 +19,8 @@ services:
       MYSQL_PORT: 3306
       MYSQL_USER: mysql
       MYSQL_DATABASE: ricky_blog
-      MYSQL_PASSWORD: mysql
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_PASSWORD: gaga!1234
+      MYSQL_ROOT_PASSWORD: gaga!1234
     ports:
       - 3306:3306
   frontend:
